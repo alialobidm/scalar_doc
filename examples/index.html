@@ -3,8 +3,8 @@
         <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Spotify</title>
-            <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg">
+            <title>Scalar API Docs</title>
+            <link rel="shortcut icon" href="None">
             <meta name="theme-color" content="#1DB954">
             <style>
                 body { margin: 0; padding: 0; }
@@ -49,14 +49,18 @@
         </style>
         <header class="custom-header scalar-app">
             <div style="padding: 16px;">
-                <img class="light-only" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_Green.png" style="max-height:24px;">
+                <img class="light-only" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_White.png" style="max-height:24px;">
                 <img class="dark-only" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_White.png" style="max-height:24px;">
             </div>
-            <nav><ul><li><a target="_blank" href="https://spotify.com">Spotify</a></li></ul></nav>
+            <nav><ul></ul></nav>
         </header>
             
-            <script id="api-reference" data-url="https://raw.githubusercontent.com/sonallux/spotify-web-api/refs/heads/main/official-spotify-open-api.yml"></script>
-            <script>document.getElementById('api-reference').dataset.configuration = '{"hideInternal": false, "hideDownloadButton": true, "showSidebar": true, "showWebhooks": true, "showExamples": true, "authPersist": false, "expandAuthentication": false, "expandTableOfContents": true, "darkModeInvertColors": false, "enableSearch": true, "persistAuth": false, "showModels": false, "tryIt": true, "showErrors": true, "showExport": false, "expandResponses": false, "schemaStyle": "table"}';</script>
-            <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+            <div id="api-reference" data-url="https://raw.githubusercontent.com/sonallux/spotify-web-api/refs/heads/main/official-spotify-open-api.yml"></div>
+            <script>
+                window.scalarCreateApiReferenceArgs = {"configuration":{"hideInternal":false,"hideDownloadButton":false,"showSidebar":false,"showWebhooks":true,"showExamples":true,"authPersist":false,"expandAuthentication":false,"expandTableOfContents":true,"darkModeInvertColors":false,"enableSearch":true,"persistAuth":false,"withDefaultFonts":true,"showModels":false,"tryIt":true,"showErrors":true,"showExport":false,"expandResponses":false,"schemaStyle":"table"},"url":"https://raw.githubusercontent.com/sonallux/spotify-web-api/refs/heads/main/official-spotify-open-api.yml","spec":{},"proxyUrl":"https://proxy.scalar.com"};
+                const initScalar = () => (Scalar.createApiReference("#api-reference", {"configuration":{"hideInternal":false,"hideDownloadButton":false,"showSidebar":false,"showWebhooks":true,"showExamples":true,"authPersist":false,"expandAuthentication":false,"expandTableOfContents":true,"darkModeInvertColors":false,"enableSearch":true,"persistAuth":false,"withDefaultFonts":true,"showModels":false,"tryIt":true,"showErrors":true,"showExport":false,"expandResponses":false,"schemaStyle":"table"},"url":"https://raw.githubusercontent.com/sonallux/spotify-web-api/refs/heads/main/official-spotify-open-api.yml","spec":{},"proxyUrl":"https://proxy.scalar.com"}));
+            </script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference" onload="initScalar"></script>
         </body>
         </html>

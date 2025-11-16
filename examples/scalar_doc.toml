@@ -1,15 +1,36 @@
+[scalar_doc.theme]
+logo_url = "https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_Green.png"
+logo_url_dark = "https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_White.png"
+
 [scalar_doc.theme.light]
-color_accent = "#1DB954"
+color_1 = "#191414"
+color_2 = "#3e3e3e"
+color_3 = "#1DB954"
 background_1 = "#ffffff"
+background_2 = "#f0f0f0"
+background_3 = "#e6e6e6"
+color_accent = "#1DB954"
+background_accent = "#d2fbe3"
+link_color = "#1DB954"
+code = "#2b2b2b"
 
 [scalar_doc.theme.dark]
-color_accent = "#1DB954"
-background_1 = "#191414"
+color_1="#ffffff"
+color_2="#aaaaaa"
+color_3="#1DB954"
+background_1="#191414"
+background_2="#121212"
+background_3="#282828"
+color_accent="#1DB954"
+background_accent="#1DB95433"
+link_color="#1DB954"
+code="#1DB954"
 
 [scalar_doc.config]
 show_sidebar = false
 show_models = false
 expand_table_of_contents = true
+schema_style = "table"
 
 # You can also configure it as a tool on poetry
 # [tool.scalar_doc.theme.light]

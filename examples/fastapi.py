@@ -1,6 +1,12 @@
 from fastapi import FastAPI, responses
 
-from scalar_doc import ScalarColorSchema, ScalarDoc, ScalarHeader, ScalarTheme
+from scalar_doc import (
+    ScalarColorSchema,
+    ScalarConfiguration,
+    ScalarDoc,
+    ScalarHeader,
+    ScalarTheme,
+)
 
 DESCRIPTION = """
 # Welcome!
@@ -20,10 +26,12 @@ app = FastAPI(
 )
 docs = ScalarDoc.from_spec(spec=app.openapi_url, mode="url")
 
+docs.set_configuration(ScalarConfiguration(with_default_fonts=False))
+
 docs.set_header(
     ScalarHeader(
         logo_url="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-        logo_url_dark="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",  # Mesmo logo funciona bem nos dois
+        logo_url_dark="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
         links={"Python.org": "https://www.python.org"},
     )
 )
@@ -46,7 +54,7 @@ docs.set_theme(
             color_1="#ffffff",
             color_2="#aaaaaa",
             color_3="#FFD43B",
-            background_1="#0a0a0a",  # Escuro mesmo
+            background_1="#0a0a0a",
             background_2="#111111",
             background_3="#1a1a1a",
             color_accent="#FFD43B",
