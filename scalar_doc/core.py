@@ -197,7 +197,9 @@ class ScalarDoc:
     def set_spec(self, spec: Any, mode: Literal["url", "json"] = "url"):
         if mode == "url":
             self.__openapi_url = spec
+            self.__openapi_json = None
         elif mode == "json":
+            self.__openapi_url = None
             self.__openapi_json = spec
         else:
             raise ValueError("mode must be 'url' or 'json'")
