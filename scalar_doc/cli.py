@@ -12,6 +12,12 @@ def load_config_from_files(path: Path) -> dict:
     pyproject_path = path / "pyproject.toml"
     scalar_doc_path = path / "scalar_doc.toml"
 
+    if scalar_doc_path.exists():
+        print(f"⚙️\t{scalar_doc_path} loaded")
+        with scalar_doc_path.open("rb") as f:
+            data = tomllib.load(f)
+        return data.get("scalar_doc", {})
+
     if pyproject_path.exists():
         with pyproject_path.open("rb") as f:
             data = tomllib.load(f)
@@ -19,12 +25,6 @@ def load_config_from_files(path: Path) -> dict:
         if scalar_doc:
             print(f"⚙️\t{pyproject_path} loaded")
             return scalar_doc
-
-    if scalar_doc_path.exists():
-        print(f"⚙️\t{scalar_doc_path} loaded")
-        with scalar_doc_path.open("rb") as f:
-            data = tomllib.load(f)
-        return data
 
     print(f"⚙️\tNo config loaded")
     return {}
