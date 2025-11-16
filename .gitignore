@@ -3,3 +3,4 @@ poetry.lock
 dist
 private.py
 __pycache__
+Makefile
