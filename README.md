@@ -11,7 +11,7 @@ A powerful, customizable, and fully native way to render OpenAPI documentation u
 
 ## ✨ Why Scalar DOC?
 
-**`scalar_doc`** is a lightweight Python package for generating **beautiful, interactive API documentation** from OpenAPI specs using the blazing-fast and modern [Scalar](https://scalar.dev/).
+**`scalar_doc`** is a lightweight Python package for generating **beautiful, interactive API documentation** from OpenAPI specs using the blazing-fast and modern [Scalar](https://scalar.com/).
 
 Unlike static alternatives or bulky exporters, Scalar DOC delivers:
 
@@ -227,7 +227,7 @@ spotify_docs.set_theme(
 
 ## 📚 References
 
-* 🔗 [scalar.dev](https://scalar.dev/) — Official Scalar docs
+* 🔗 [scalar.com](https://scalar.com/) — Official Scalar docs
 * 🔗 [github.com/scalar/scalar](https://github.com/scalar/scalar) — Underlying engine
 * 🔗 [OpenAPI Initiative](https://www.openapis.org/) — Specification standard
 
