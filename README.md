@@ -1,6 +1,7 @@
 # 🚀 Scalar DOC
 [![Scalar App](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.todesktop.com%2Fv1%2FgetReleaseBuildIds%3FappId%3D240718bnjmcfyp4&query=%24.releases%5B%3A1%5D.version&label=Scalar%20App&labelColor=%231a1a1a&color=%23e7e7e7)](https://scalar.com/download)
 [![Scalar-Doc Powered](https://img.shields.io/badge/scalar_doc-python-blue)](https://github.com/iagobalmeida/scalar_doc)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falialobidm%2Fscalar_doc.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Falialobidm%2Fscalar_doc?ref=badge_shield)
 
 A powerful, customizable, and fully native way to render OpenAPI documentation using [Scalar API Reference](https://github.com/scalar/scalar) — directly from Python 🐍.
 
@@ -250,3 +251,6 @@ This is an Open Source project! Pull requests and issues are warmly welcome!
 ## 📄 License
 
 MIT License. See [LICENSE](./LICENSE) for details.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falialobidm%2Fscalar_doc.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Falialobidm%2Fscalar_doc?ref=badge_large)
